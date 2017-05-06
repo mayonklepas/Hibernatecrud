@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 8, 2016 12:51:16 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entities.Bukutelpon" table="bukutelpon" schema="public" optimistic-lock="version">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="increment" />
+        </id>
+        <property name="nama" type="string">
+            <column name="nama" length="50" />
+        </property>
+        <property name="nohp" type="string">
+            <column name="nohp" length="20" />
+        </property>
+    </class>
+</hibernate-mapping>
